@@ -1,19 +1,13 @@
 pipeline {
-    agent any
-    stages {
-        stage("This is my first stage1") {
-            steps {
-                script {
-                    echo "Hello, I am stage1"
-                }
-            }
-        }
-        stage("This is my first stage2") {
-            steps {
-                script {
-                    echo "Hello, I am stage2"
-                }
-            }
-        }
-    }
-}
+ agent any
+   stages {
+		stage ("Testing variables"){
+			steps {
+				script {
+					var1 =10
+					println "Here is your varaible value : ${var1} "
+					}
+				}
+			}
+		}
+	}
