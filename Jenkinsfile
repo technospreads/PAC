@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
     environment {
@@ -18,10 +17,8 @@ pipeline {
                     println "Here is your environment variable value: ${env.batch}" // Corrected from 'batct'
                     println "Here is your environment variable value: ${env.BRANCH_NAME}"
                     println "Here is your environment variable value: ${env.BUILD_ID}"
-                    println "Here is your Global variable value: ${currentBuild.result}"
+                    println "Here is your Global variable value: ${currentBuild.projectName}"
                     println "Here is your Parameterized variable value: ${params.environment}"
                 }
             }
         }
-    }
-}
