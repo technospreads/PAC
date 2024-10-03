@@ -11,9 +11,9 @@ pipeline {
 					}
 					else
 					{
-					println "Here is your B varibale value is big: ${b}
+					println "Here is your B varibale value is big: ${b}"
 					}
-					}
+				     }
 				}
 			}
 		}
