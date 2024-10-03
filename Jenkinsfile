@@ -4,7 +4,8 @@ pipeline {
 		stage ("Working with conditions"){
 			steps {
 				script {
-					a=100;b=20
+					a = input message: 'Please enter your variable A value ', parameters: [string(defaultValue: '10', description: 'a', name: 'a')]
+					b = input message: 'Please enter your variable B value ', parameters: [string(defaultValue: '20', description: 'b', name: 'a')]
 					if ( a >= b )
 					{
 					println "Here your A varibale value is big: ${a}"					
@@ -13,7 +14,7 @@ pipeline {
 					{
 					println "Here is your B varibale value is big: ${b}"
 					}
-				     }
+					}
 				}
 			}
 		}
