@@ -5,7 +5,7 @@ pipeline {
 			steps {
 				script {
 					File obj1 = new File("/tmp/ravi.txt")
-					println obj1
+					println "here is your file content : ${obj1.text}"
 					}
 				}
 			}
