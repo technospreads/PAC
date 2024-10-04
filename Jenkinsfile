@@ -1,6 +1,6 @@
-def myfunc()
+def myfunc(int a, int b)
 {
-println "Hello welcome to Technospreads DevOps clases"
+prinln " Here is your variable A value : ${a}, and varible B value : ${b} and here is your addition of variables : ${a+b}"
 }
 
 pipeline {
@@ -9,7 +9,7 @@ pipeline {
 		stage ("Working with Functions"){
 			steps {
 				script {
-					myfunc()
+					myfunc(10,20)
 					}
 				}
 			}
