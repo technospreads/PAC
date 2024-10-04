@@ -5,7 +5,7 @@ pipeline {
 			steps {
 				script {
 					File obj1 = new File("/tmp/ravi.txt")
-					obj1.write("This is my file cretaion")
+					println obj1
 					}
 				}
 			}
