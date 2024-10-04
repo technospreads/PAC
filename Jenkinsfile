@@ -6,6 +6,9 @@ pipeline {
 				script {
 					File obj1 = new File("/tmp/ravi.txt")
 					println "here is your file content : ${obj1.text}"
+					for ( line in obj1.readlins()){
+					println "here is your file content : ${line}"
+					}
 					}
 				}
 			}
