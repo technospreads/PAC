@@ -9,6 +9,7 @@ pipeline {
 		stage ("Working with Functions"){
 			steps {
 				script {
+					myfunc(10)
 					myfunc(10,2020)
 					}
 				}
